@@ -1,4 +1,4 @@
-QT += qml quick svg
+QT += qml quick svg xml
 
 CONFIG += c++11
 
