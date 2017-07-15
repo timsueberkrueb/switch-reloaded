@@ -9,7 +9,7 @@
 A simple game about linear algebra.
 
 ### Dependencies
-* Qt >= 5.6 with at least the following modules is required:
+* Qt >= 5.7 with at least the following modules is required:
     * [qtbase](http://code.qt.io/cgit/qt/qtbase.git)
     * [qtdeclarative](http://code.qt.io/cgit/qt/qtdeclarative.git)
     * [qtquickcontrols2](http://code.qt.io/cgit/qt/qtquickcontrols2.git/)
