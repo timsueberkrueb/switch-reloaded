@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/logic">
+        <file>Matrix.qml</file>
+        <file>qmldir</file>
+        <file>LevelModel.qml</file>
+    </qresource>
+</RCC>

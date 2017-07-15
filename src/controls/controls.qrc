@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/controls">
+        <file>Icon.qml</file>
+        <file>IconButton.qml</file>
+        <file>Utils.qml</file>
+        <file>qmldir</file>
+    </qresource>
+</RCC>

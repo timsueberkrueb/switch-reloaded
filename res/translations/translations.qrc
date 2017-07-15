@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/translations">
+        <file>switch-reloaded.qm</file>
+        <file>de_DE.qm</file>
+    </qresource>
+</RCC>

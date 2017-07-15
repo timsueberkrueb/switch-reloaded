@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/app">
+        <file>Main.qml</file>
+        <file>MatrixRow.qml</file>
+        <file>MatrixElement.qml</file>
+        <file>MatrixWidget.qml</file>
+        <file>MatrixBackground.qml</file>
+        <file>LevelSelection.qml</file>
+        <file>LevelScreen.qml</file>
+        <file>MultiplySlider.qml</file>
+        <file>Checkmarks.qml</file>
+        <file>TutorialPage.qml</file>
+        <file>AboutPage.qml</file>
+        <file>TutorialSection.qml</file>
+    </qresource>
+</RCC>

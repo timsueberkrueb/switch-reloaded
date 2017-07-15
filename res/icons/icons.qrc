@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>arrow-back.svg</file>
+        <file>checkbox-outline-blank.svg</file>
+        <file>menu.svg</file>
+        <file>play.svg</file>
+        <file>close.svg</file>
+        <file>more-vertical.svg</file>
+        <file>checkbox-outline.svg</file>
+    </qresource>
+</RCC>
