@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Switch Reloaded
+Comment=Simple game about linear algebra 
+Exec=switch-reloaded %U
+Terminal=false
+Type=Application
+Categories=Qt;
+Keywords=Game;
+Icon=switch-reloaded
+

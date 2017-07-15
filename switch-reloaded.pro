@@ -25,3 +25,13 @@ qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android
+
+unix:!android: {
+    icon.files = res/switch/switch-reloaded.png
+    icon.path = /usr/local/share/icons/hicolor/512x512/apps
+    INSTALLS += icon
+
+    desktop.path = /usr/share/applications
+    desktop.files += res/switch/Switch-Reloaded.desktop
+    INSTALLS += desktop
+}
