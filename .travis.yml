@@ -30,5 +30,5 @@ after_success:
   - ./linuxdeployqt*.AppImage ./appdir/usr/share/applications/*.desktop -bundle-non-qt-libs -qmldir=. -verbose=2
   - ./linuxdeployqt*.AppImage ./appdir/usr/share/applications/*.desktop -appimage -qmldir=. -verbose=2
   - find ./appdir -executable -type f -exec ldd {} \; | grep " => /usr" | cut -d " " -f 2-3 | sort | uniq
-  - curl --upload-file ./Switch-Reloaded*.AppImage https://transfer.sh/Switch-Reloaded-git.$(git rev-parse --short HEAD)-x86_64.AppImage
+  - curl --upload-file ./Switch_Reloaded*.AppImage https://transfer.sh/Switch_Reloaded-git.$(git rev-parse --short HEAD)-x86_64.AppImage
 
