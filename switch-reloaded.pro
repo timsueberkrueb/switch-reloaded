@@ -21,10 +21,11 @@ DISTFILES += \
     android/res/values/libs.xml \
     android/build.gradle \
 
-qnx: target.path = /tmp/$${TARGET}/bin
-else: unix:!android: target.path = /opt/$${TARGET}/bin
-!isEmpty(target.path): INSTALLS += target
 ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android
+
+qnx: target.path = /tmp/$${TARGET}/bin
+else: unix:!android: target.path = /usr/bin
+!isEmpty(target.path): INSTALLS += target
 
 unix:!android: {
     icon.files = res/switch/switch-reloaded.png
