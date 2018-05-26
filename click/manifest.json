@@ -1,0 +1,15 @@
+{
+    "name": "switch-reloaded.timsueberkrueb",
+    "description": "A simple game about linear equations",
+    "architecture": "@CLICK_ARCH@",
+    "title": "Switch Reloaded",
+    "hooks": {
+        "switch-reloaded": {
+            "apparmor": "switch-reloaded.apparmor",
+            "desktop": "switch-reloaded.desktop"
+        }
+    },
+    "version": "0.1.0",
+    "maintainer": "Tim Süberkrüb <dev@timsueberkrueb.io>",
+    "framework": "ubuntu-sdk-16.04"
+}

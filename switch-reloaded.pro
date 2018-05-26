@@ -1,4 +1,11 @@
-QT += qml quick svg xml
+TEMPLATE = app
+TARGET = switch-reloaded
+
+load(ubuntu-click)
+
+UBUNTU_MANIFEST_FILE = click/manifest.json
+
+QT += qml quick svg xml quickcontrols2
 
 CONFIG += c++11
 
@@ -23,16 +30,36 @@ DISTFILES += \
 
 ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android
 
-qnx: target.path = /tmp/$${TARGET}/bin
-else: unix:!android: target.path = /usr/bin
-!isEmpty(target.path): INSTALLS += target
 
-unix:!android: {
-    icon.files = res/switch/switch-reloaded.png
-    icon.path = /usr/local/share/icons/hicolor/512x512/apps
-    INSTALLS += icon
+isEmpty(UBUNTU_CLICK_BINARY_PATH) {
+    unix:!android: {
+        target.path = /usr/bin
 
-    desktop.path = /usr/share/applications
-    desktop.files += res/switch/Switch-Reloaded.desktop
-    INSTALLS += desktop
+        icon.files = res/switch/switch-reloaded.png
+        icon.path = /usr/local/share/icons/hicolor/512x512/apps
+
+        desktop.path = /usr/share/applications
+        desktop.files += res/switch/Switch-Reloaded.desktop
+        INSTALLS += desktop
+    }
+} else {
+    target.path = $${UBUNTU_CLICK_BINARY_PATH}
+
+    icon.files = res/switch/icon_256.png
+    icon.path = /
+
+    CONF_FILES += click/switch-reloaded.apparmor
+
+    desktop_file.path = /
+    desktop_file.files = click/switch-reloaded.desktop
+    desktop_file.CONFIG += no_check_exist
+    INSTALLS+=desktop_file
+
+    config_files.path = /
+    config_files.files += $${CONF_FILES}
+    INSTALLS+=config_files
 }
+
+INSTALLS += icon
+
+!isEmpty(target.path): INSTALLS += target
