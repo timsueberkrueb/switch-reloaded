@@ -1,3 +1,4 @@
 {
-    "template": "qmake"
+    "template": "qmake",
+    "build_args": "DEFINES+=UBUNTU_TOUCH_FIX_HIGH_DPI"
 }
