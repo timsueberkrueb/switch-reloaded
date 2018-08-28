@@ -41,12 +41,13 @@ Rectangle {
 
             var columns = Math.floor(canvas.width/fontSize);
             var rows = Math.floor(canvas.height/fontSize);
+            var count = 10;
 
             // Draw characters
             for (var i=0; i < columns; i++) {
-                var current_row = Math.floor(Math.random()*rows);
-                for (var j=0; j < 10; j++) {
-                    var r = Math.max(0, current_row - 10 + j);
+                var currentRow = Math.floor(Math.random() * rows);
+                for (var j=0; j < count; j++) {
+                    var r = Math.max(0, currentRow - count + j);
                     ctx.fillStyle = Qt.rgba(foregroundColor.r, foregroundColor.g, foregroundColor.b, j/10);
                     var character = characters[Math.floor(Math.random()*characters.length)];
                     ctx.fillText(character, i*fontSize, r*fontSize);
