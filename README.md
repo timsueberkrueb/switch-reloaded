@@ -1,10 +1,10 @@
 ## Switch Reloaded
 
 [![License](https://img.shields.io/badge/license-GPLv3.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
-[![GitHub release](https://img.shields.io/github/release/tim-sueberkrueb/switch-reloaded.svg)](https://github.com/tim-sueberkrueb/switch-reloaded/releases)
-[![Build Status](https://travis-ci.org/tim-sueberkrueb/switch-reloaded.svg?branch=develop)](https://travis-ci.org/tim-sueberkrueb/switch-reloaded)
-[![GitHub issues](https://img.shields.io/github/issues/tim-sueberkrueb/switch-reloaded.svg)](https://github.com/tim-sueberkrueb/switch-reloaded/issues)
-[![Maintained](https://img.shields.io/maintenance/yes/2017.svg)](https://github.com/tim-sueberkrueb/switch-reloaded/commits/develop)
+[![GitHub release](https://img.shields.io/github/release/timsueberkrueb/switch-reloaded.svg)](https://github.com/timsueberkrueb/switch-reloaded/releases)
+[![Build Status](https://travis-ci.org/timsueberkrueb/switch-reloaded.svg?branch=develop)](https://travis-ci.org/timsueberkrueb/switch-reloaded)
+[![GitHub issues](https://img.shields.io/github/issues/timsueberkrueb/switch-reloaded.svg)](https://github.com/timsueberkrueb/switch-reloaded/issues)
+[![Maintained](https://img.shields.io/maintenance/yes/2017.svg)](https://github.com/timsueberkrueb/switch-reloaded/commits/develop)
 
 A simple game about linear algebra.
 
