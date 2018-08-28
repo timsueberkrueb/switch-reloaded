@@ -4,7 +4,7 @@
 #include <QTranslator>
 #include <QDebug>
 
-#ifdef UBUNTU_TOUCH_FIX_HIGH_DPI
+#ifdef UBUNTU_TOUCH_SUPPORT
 #include <QByteArray>
 #include <QString>
 
@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
     // Enabled high dpi scaling
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 
-#ifdef UBUNTU_TOUCH_FIX_HIGH_DPI
+#ifdef UBUNTU_TOUCH_SUPPORT
     fixHighDpiUbuntuTouch();
 #endif
 
@@ -45,7 +45,14 @@ int main(int argc, char *argv[])
         qDebug() << "Translation file not loaded.";
     }
 
+#ifdef UBUNTU_TOUCH_SUPPORT
+    // We may only write configuration to ~/.config/switch-reloaded.timsueberkrueb on Ubuntu touch.
+    // Settings will be stored in ~/.config/[organizationName]/[applicationName].conf
+    // Therefore set the organization to the app name on Ubuntu touch:
+    app.setOrganizationName("switch-reloaded.timsueberkrueb");
+#else
     app.setOrganizationName("timsueberkrueb");
+#endif
     app.setApplicationName("switch-reloaded.timsueberkrueb");
 
     QQmlApplicationEngine engine;
