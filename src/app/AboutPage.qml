@@ -94,7 +94,7 @@ Page {
                 }
 
                 Label {
-                    text: qsTr("Source code available on <a href='%1'>GitHub</a>.").arg("https://github.com/tim-sueberkrueb/switch")
+                    text: qsTr("Source code available on <a href='%1'>GitHub</a>.").arg("https://github.com/timsueberkrueb/switch-reloaded")
                     width: parent.width
                     wrapMode: Text.WordWrap
                     linkColor: aboutPage.linkColor
@@ -122,23 +122,16 @@ Page {
                     spacing: 8
 
                     Button {
-                        text: qsTr("Rate")
-                        onClicked: {
-                            Qt.openUrlExternally("market://details?id=io.timsueberkrueb.swichreloaded")
-                        }
-                    }
-
-                    Button {
                         text: qsTr("Report bug")
                         onClicked: {
-                            Qt.openUrlExternally("https://github.com/tim-sueberkrueb/switch-reloaded/issues/new");
+                            Qt.openUrlExternally("https://github.com/timsueberkrueb/switch-reloaded/issues/new");
                         }
                     }
 
                     Button {
                         text: qsTr("Contribute")
                         onClicked: {
-                            Qt.openUrlExternally("https://github.com/tim-sueberkrueb/switch-reloaded");
+                            Qt.openUrlExternally("https://github.com/timsueberkrueb/switch-reloaded");
                         }
                     }
                 }
