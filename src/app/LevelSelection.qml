@@ -156,6 +156,7 @@ Item {
                                     }
 
                                     Label {
+                                        Layout.fillHeight: true
                                         text: levelItem.unlocked ? levelItem.title : qsTr("Locked")
                                         font.pixelSize: 16
                                     }
