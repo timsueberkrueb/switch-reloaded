@@ -159,6 +159,7 @@ Item {
         anchors.fill: parent
         drag.target: content
         drag.smoothed: true
+        drag.threshold: 0
         drag.axis: Drag.YAxis
 
         onReleased: {

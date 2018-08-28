@@ -112,7 +112,7 @@ Page {
                 Label {
                     text: ("This application is free software: you can redistribute it and/or modify it under the terms of" +
                            " the GNU General Public License as published by the Free Software Foundation, either version 3 of the " +
-                           "License, or (at your option) any later version.<br/><br/>Copyright © 2016-2017 Tim Süberkrüb and contributors.<br/>")
+                           "License, or (at your option) any later version.<br/><br/>Copyright © 2016-2018 Tim Süberkrüb and contributors.<br/>")
                     width: parent.width
                     wrapMode: Text.WordWrap
                 }

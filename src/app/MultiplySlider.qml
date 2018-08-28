@@ -79,6 +79,7 @@ Rectangle {
                 anchors.fill: parent
                 drag.target: parent
                 drag.axis: Drag.XAxis
+                drag.threshold: 0
                 onReleased: {
                     multiply(factor);
                 }

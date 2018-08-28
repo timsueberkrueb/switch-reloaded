@@ -1,0 +1,5 @@
+{
+    "template": "qmake",
+    "build_args": "DEFINES+=UBUNTU_TOUCH_SUPPORT",
+    "sdk": "ubuntu-sdk-16.04"
+}

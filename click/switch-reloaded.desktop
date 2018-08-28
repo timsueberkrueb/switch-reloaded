@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Switch Reloaded
+Exec=switch-reloaded
+Icon=icon_256.png
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true
