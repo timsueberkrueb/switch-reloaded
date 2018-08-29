@@ -24,6 +24,8 @@ make
 ```
 
 ### Credits
+Many thanks to Hendrik Süberkrüb for creating the application icon.
+
 Many thanks to [Andrew Penkrat](https://github.com/aldrog) for his help and contribution ensuring Switch generates systems with one and only one solution. :wink:
 
 Thanks to [Stuart Langridge](https://github.com/stuartlangridge) for testing, design input and QA.
