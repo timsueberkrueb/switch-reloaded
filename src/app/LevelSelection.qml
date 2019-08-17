@@ -157,8 +157,10 @@ Item {
 
                                     Label {
                                         Layout.fillHeight: true
+                                        Layout.fillWidth: true
                                         text: levelItem.unlocked ? levelItem.title : qsTr("Locked")
                                         font.pixelSize: 16
+                                        elide: Text.ElideRight
                                     }
 
                                     Checkmarks {

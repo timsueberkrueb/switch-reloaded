@@ -21,6 +21,20 @@ RESOURCES += src/app/app.qrc \
 
 TRANSLATIONS += res/translations/switch-reloaded.ts \
                 res/translations/de_DE.ts \
+                res/translations/fr_FR.ts \
+
+qtPrepareTool(LRELEASE, lrelease)
+for(tsfile, TRANSLATIONS) {
+    qmfile = $$shadowed($$tsfile)
+    qmfile ~= s,.ts$,.qm,
+    qmdir = $$dirname(qmfile)
+    !exists($$qmdir) {
+        mkpath($$qmdir)|error("Aborting.")
+    }
+    command = $$LRELEASE -removeidentical $$tsfile -qm $$qmfile
+    system($$command)|error("Failed to run: $$command")
+    TRANSLATIONS_FILES += $$qmfile
+}
 
 DISTFILES += \
     src/logic/qmldir \

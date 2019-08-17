@@ -1,6 +1,7 @@
 <RCC>
     <qresource prefix="/translations">
-        <file>switch-reloaded.qm</file>
-        <file>de_DE.qm</file>
+        <file alias="switch-reloaded.qm">../../build/res/translations/switch-reloaded.qm</file>
+        <file alias="de_DE.qm">../../build/res/translations/de_DE.qm</file>
+        <file alias="fr_FR.qm">../../build/res/translations/fr_FR.qm</file>
     </qresource>
 </RCC>
